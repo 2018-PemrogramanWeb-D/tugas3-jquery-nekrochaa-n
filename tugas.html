@@ -1,0 +1,139 @@
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script> 
+	$(document).ready(function(){
+	    $("#bot1").click(function(){
+	        $("div").animate({left: '150px'});
+	    });
+	    $("#bot2").click(function(){
+	        $("div").animate({bottom: '150px'});
+	    });
+	    $("#bot3").click(function(){
+	        $("div").animate({top: '150px'});
+	    });
+	    $("#bot4").click(function(){
+	        $("div").animate({right: '150px'});
+	    });
+
+	    $("#bot5").click(function(){
+	        $("#teks1").text("ini sudah diganti paragrafnya");
+	    });
+	    $("#bot6").click(function(){
+	        $("#teks2").html("ini sudah diganti paragrafnya, tapi bagian dua");
+	    });
+	    $("#bot7").click(function(){
+	        $("#teks3").val("420 weed");
+	    });
+	  
+		$("#myInput").on("keyup", function() {
+		    var value = $(this).val().toLowerCase();
+		    $("#myTable tr").filter(function() {
+		      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+		    });
+		  });
+
+	});
+	</script> 
+
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+
+	<title>tUGAS TIGa</title>
+</head>
+
+<body>
+	<h1>animasi jQuery</h1>
+	<p>kalau tombol ini ditekan, nanti kotaknya akan bergerak</p>
+<button id="bot1">kotak ke kanan</button>
+<button id="bot2">kotak ke atas</button>
+<button id="bot3">kotak ke bawah</button>
+<button id="bot4">kotak ke kiri</button></br>
+
+
+<div style="background:lightblue;height:50px;width:50px;position:relative;"></div>
+</br>
+</br>
+</br>
+</br>
+
+<h1>set konten jQuery</h1>
+
+<p id="teks1">lorem ipsoom</p>
+<p id="teks2">potato 212</p>
+
+<p>Input field: <input type="text" id="teks3" value="Insert text"></p>
+
+<button id="bot5">Set Text</button>
+<button id="bot6">Set HTML</button>
+<button id="bot7">Set Value</button>
+</br>
+</br>
+</br>
+</br>
+<h1>filter jQuery</h1>
+
+<p>Type something in the input field to search the table for first names, last names or emails:</p>  
+<input id="myInput" type="text" placeholder="Search..">
+<br><br>
+
+<table>
+  <thead>
+    <tr>
+      <th>seri</th>
+      <th>id</th>
+      <th>password</th>
+    </tr>
+  </thead>
+  <tbody id="myTable">
+    <tr>
+      <td>0123</td>
+      <td>superman14</td>
+      <td>zoyzoyzoy</td>
+    </tr>
+    <tr>
+      <td>0623</td>
+      <td>dodoxdxd</td>
+      <td>tldrnonoob</td>
+    </tr>
+    <tr>
+      <td>1084</td>
+      <td>qweqweqwerty</td>
+      <td>1234567890</td>
+    </tr>
+    <tr>
+      <td>0817</td>
+      <td>midasboy</td>
+      <td>greedpotato</td>
+    </tr>
+    <tr>
+      <td>4200</td>
+      <td>legend7</td>
+      <td>indondon</td>
+    </tr>
+    <tr>
+      <td>0001</td>
+      <td>admin</td>
+      <td>admin</td>
+    </tr>
+  </tbody>
+</table>
+
+
+</body>
+</html>
